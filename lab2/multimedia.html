@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimédia - Roma</title>
+
+    <style>
+      .fotografias {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .fotografias img {
+        width: 150px;
+        border-radius: 20px;
+      }
+
+      .poema p:nth-child(odd) {
+        font-weight: bold;
+      }
+
+      .poema p:nth-child(even) {
+        font-style: italic;
+      }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>A minha cidade: Roma</h1>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="local.html">Localização</a>
+        <a href="multimedia.html">Multimédia</a>
+        <a href="info.html">Informação</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Multimédia</h2>
+      <p>Nesta página encontra conteúdos multimédia.</p>
+      <p>
+        <a href="#fotografias">Fotografias</a>
+        <a href="#video">Vídeo</a>
+        <a href="#poema">Poema</a>
+      </p>
+      <section>
+        <h3 id="fotografias">Fotografias</h3>
+        <div class="fotografias">
+          <img src="images/1x1.jpg" alt="Fontana di Trevi" />
+          <img src="images/1x2.jpg" alt="Coliseu de Roma" />
+          <img src="images/1x3.jpg" alt="Basílica de São Pedro" />
+          <img src="images/1x4.jpg" alt="Panteão de Roma" />
+          <img
+            src="images/1x5.jpg"
+            alt="Castelo de Santo Ângelo e Ponte de Santo Ângelo"
+          />
+          <img
+            src="images/1x6.jpg"
+            alt="Escadaria de Espanha e Fontana della Barcaccia"
+          />
+          <img src="images/1x7.jpg" alt="Piazza Navona" />
+          <img src="images/1x8.jpg" alt="Fórum Romano" />
+        </div>
+      </section>
+      <section>
+        <h3 id="video">Vídeo</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/cH1E97JIyUo?si=Vt-2e5zDO3j7OIxi"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+      <section>
+        <h3 id="poema">Poesia</h3>
+
+        <div class="poema">
+          <p>Roma acorda entre pedra e história,</p>
+          <p>com o Tibre a refletir a sua memória.</p>
+          <p>Entre praças, fontes e monumentos,</p>
+          <p>vive uma cidade feita de momentos.</p>
+        </div>
+      </section>
+      <p>Roma possui muitos monumentos e locais históricos.</p>
+      <p>O Coliseu é um dos símbolos mais conhecidos da cidade.</p>
+    </main>
+
+    <footer>
+      <p>DIW 2026</p>
+    </footer>
+  </body>
+</html>
