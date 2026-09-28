@@ -38,3 +38,87 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+#inicio {
+    height: 100vh;
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#inicio h1,
+#inicio p {
+    position: relative;
+    z-index: 1;
+}
+
+#projetos {
+    height: 100vh;
+    background-color: lightcoral;
+}
+
+#cadeira {
+    height: 100vh;
+    background-color: lightgreen;
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.projetos-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+.diw-conteudo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.diw-texto,
+.diw-imagem {
+    flex: 1;
+}
+
+.diw-imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .diw-conteudo {
+        flex-direction: column;
+    }
+}

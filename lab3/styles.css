@@ -1,0 +1,171 @@
+body {
+    background-color: #dbeafe;
+}
+header {
+    background-color: #a9a5de;
+}
+
+nav {
+    background-color: #222222;
+}
+
+footer {
+    background-color: #222222;
+    color: white;
+}
+main {
+    margin: 20px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 12px;
+        border-bottom: 1px solid white;
+    }
+}
+#fotografias,
+#video,
+#poema {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#fotografias {
+    background-color: #f8d7da;
+}
+
+#video {
+    background-color: #d1ecf1;
+}
+
+#poema {
+    background-color: #d4edda;
+}
+.imagem-destaque img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.imagem-destaque {
+    position: relative;
+}
+
+.imagem-destaque p {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    font-size: 3vw;
+}
+.fotografias img {
+    transition: transform 0.5s;
+}
+
+.fotografias img:hover {
+    transform: scale(1.1);
+}
+
+.localizacao-conteudo {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.localizacao-conteudo p,
+.localizacao-conteudo iframe {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .localizacao-conteudo {
+        flex-direction: column;
+    }
+
+    .localizacao-conteudo iframe {
+        width: 100%;
+    }
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+
+.info-texto {
+    grid-column: 1;
+}
+
+.info-imagem1 {
+    grid-column: 2;
+}
+
+.info-imagem2 {
+    grid-column: 2;
+}
+
+.info-imagem1 img,
+.info-imagem2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-background {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-texto {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 40px;
+}
+
+.parallax {
+    min-height: 100vh;
+    background-image: url("images/destaque.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-texto {
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+}
